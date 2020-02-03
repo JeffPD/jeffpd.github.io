@@ -3,7 +3,7 @@ body {
     margin-top: 50px;
     font-family: sans-serif;
 }
-
+/* help from https://codetheweb.blog/2017/12/10/steps-to-creating-a-website/ */
 header {
     display: flex;
     position: fixed;
@@ -36,10 +36,10 @@ section {
     align-items: center;
     text-align: center;
     
-    background-size: cover; /* Add this line */
-    background-position: center center; /* Add this line */
-    background-repeat: no-repeat; /* Add this line */
-    background-attachment: fixed; /* Add this line */
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
 
