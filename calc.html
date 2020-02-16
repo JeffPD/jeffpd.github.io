@@ -8,11 +8,15 @@
 
             function equal(){
                 var exp = document.form.textview.value;
+                try{
                 if(exp){
                 document.top.top.value = document.form.textview.value + "="
                 document.form.textview.value = eval(document.form.textview.value)
                 document.top.top.value += document.form.textview.value
                 }
+            } catch(err){
+                document.top.top.value = document.form.textview.value + "=ERROR"
+            }
                 
             }
 
