@@ -83,7 +83,7 @@ io.on('connection', function(socket){
   });
 
   socket.on('disconnect', function(){
-
+    
     var i = 0;
     while(i < connected.length){
       if(connected[i].id == socket.id){

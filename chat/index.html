@@ -229,12 +229,14 @@
             }
 
           });
+
+          socket.on('reconnect',function(){
+            setCookie("name",user,1);
+          })
           
           socket.on('chat message', function(msg, username, time, color){
             readMsg(time, username, msg, color);
-            
 
-            
           });
           socket.on('disconnect', function(){
             setCookie("name",user,1);

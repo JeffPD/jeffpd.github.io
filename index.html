@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home - League Pros</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Jeff Datahan  | Personal Portfolio</title>
+        <link rel = "icon" href =  
+        "profile.png" 
+                type = "image/x-icon"> 
+        <link rel="stylesheet" href="style2.css">
     </head>
 
     <body>
         <header>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html"><img src="lol3.png" class="profile-img"></a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="favorite.html">Players</a></li>
-                </ul>
-            </nav>
+
         </header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <back id="navi">
+        <div class="nav" id="myNav">
+
+            <a href="" class="name"><img src="profile.png" class ="pf" type = "image/x-icon">    JEFF DATAHAN</a>
+
+              <div class="header-right">
+                <a href="#aboutss">ABOUT ME</a>
+                <a href="#contact">PROJECTS</a>
+                <a href="#players">CONTACT</a>
+            
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+              </div>
+            </div>
+        </back>
         <main>
+
             <section id="home">
                 <div class="section-inner">
-                    <img src="lol3.png" class="profile-img">
-                    <h1>Hi, Welcome to League Pros.</h1>
+                    <img src="yo.jpg" class="profile-img">
+                    <h1>UofC Comp Sci Major</h1>
                 </div>
             </section>
 
         </main>
         <footer>
-            © Dont own any pics
+            © Profile icon by Freepik
         </footer>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myNav");
+              if (x.className === "nav") {
+                x.className += " responsive";
+              } else {
+                x.className = "nav";
+              }
+            }
+           
+
+            </script>
     </body>
 </html>
 
