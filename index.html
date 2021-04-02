@@ -19,7 +19,7 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Jeff<span>PD</span></a></div>
+            <div class="logo"><a href="#home">Jeff<span>PD</span></a></div>
             <ul class="menu">
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#projects" class="menu-btn">Projects</a></li>
@@ -54,9 +54,9 @@
                     <img src="images/profile.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">Welcome to my Personal <span>Portfolio</span></div>
+                    <div class="text">Welcome to my Personal Portfolio</div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
-                    <a href="docs/JeffDatahan.docx" download>Download CV</a>
+                    <a href="docs/JeffDatahan.docx" download>Download Resume</a>
                 </div>
             </div>
         </div>
@@ -120,16 +120,8 @@
             <div class="contact-content">
                 <div class="column left">
                     
-                    <p>Feel fre</p>
+                    <p>Feel free to email me</p>
                     <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-users"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Jeff Peter Datahan</div>
-                            </div>
-                            
-                        </div>
                         <div class="row">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
@@ -147,7 +139,22 @@
                     </div>
                 </div>
                 <div class="column right">
-
+                    <form target="_blank" action="https://formsubmit.co/jeffdatahan@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Email from WebPage!">
+                        <input type="hidden" name="_next" value="https://jeffpd.github.io/thankyou.html">
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                    </form>
 
                 </div>
             </div>
@@ -156,7 +163,9 @@
 
     <!-- footer section start -->
     <footer>
-        
+        <div class="ftr-btn">
+            <a href="https://www.linkedin.com/in/jeff-datahan/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
     </footer>
 
     <script src="script.js"></script>

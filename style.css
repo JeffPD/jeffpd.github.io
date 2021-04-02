@@ -284,12 +284,7 @@ section .title::after{
 .projects .title::before{
     background: #fff;
 }
-/*
-.projects .title::after{
-    background: #111;
-    content: "what i provide";
-}
-*/
+
 .projects .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
@@ -360,14 +355,7 @@ section .title::after{
     background: lightgrey;
     position: relative;
 }
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: crimson;
-}
+
 .skills-content .right .html::before{
     width: 90%;
 }
@@ -468,23 +456,7 @@ section .title::after{
     height: 47px;
     width: 170px;
 }
-.contact .right form .button button{
-    width: 100%;
-    height: 100%;
-    border: 2px solid crimson;
-    background: crimson;
-    color: #fff;
-    outline: none;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.contact .right form .button button:hover{
-    color: crimson;
-    background: none;
-}
+
 
 /* footer section styling */
 footer{
@@ -493,13 +465,11 @@ footer{
     color: #fff;
     text-align: center;
 }
-footer span a{
-    color: crimson;
-    text-decoration: none;
+
+footer .ftr-btn a{
+    color: #19ff19;
 }
-footer span a:hover{
-    text-decoration: underline;
-}
+
 
 
 /* responsive media query start */
