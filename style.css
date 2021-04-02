@@ -448,7 +448,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    width: 40%;
+    width: 0%;
     color: #19ff19;
 }
 .contact .contact-content .info .head{
