@@ -40,8 +40,8 @@ section{
 }
 .about .about-content, 
 .projects .serv-content,
-.skills .skills-content,
-.contact .contact-content{
+.skills .skills-content{
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -322,145 +322,95 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* skills section styling */
-/*
-.skills .title::after{
-    content: "what i know";
-}*/
-.skills .skills-content .column{
-   width: calc(50% - 30px);
-}
-.skills .skills-content .left .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.skills .skills-content .left p{
-    text-align: justify;
-}
 
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-
-.skills-content .right .html::before{
-    width: 90%;
-}
-.skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
-    width: 80%;
-}
-.skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
-    width: 70%;
-}
 
 
 
 /* contact section styling */
 
 .contact{
-    color: #fff;
+    color: #111;
     background: #111;
+
+}
+.contact h2{
+    margin-top: 40px;
+    font-weight: 200;
+    color: #fff;
+}
+.contact .contact-content{
+
+    max-width: 600px;
+    background: #111;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px forestgreen;
+    font-family: "Montserrat",sans-serif;
+    
+    
 }
 
+.contact .form-group{
+    color: rgb(46, 70, 59);
+    border: 1px solid forestgreen;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+    
+    text-align: center;
+    
+}
 
-.contact .contact-content .column{
-    width: calc(50% - 30px);
+.contact .form-group label{
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
 }
-.contact .contact-content .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.contact .contact-content .left p{
-    text-align: justify;
-}
-.contact .contact-content .left .icons{
-    margin: 10px 0;
-}
-.contact .contact-content .row{
-    display: flex;
-    height: 65px;
-    align-items: center;
-}
-.contact .contact-content .row .info{
-    margin-left: 60px;
-}
-.contact .contact-content .row i{
-    font-size: 25px;
-    width: 0%;
-    color: #19ff19;
-}
-.contact .contact-content .info .head{
-    font-weight: 500;
-}
-.contact .contact-content .info .sub-title{
-    color: #19ff19;
-}
-.contact .right form .fields{
-    display: flex;
-}
-.contact .right form .field,
-.contact .right form .fields .field{
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-.contact .right form .textarea{
-    height: 80px;
-    width: 100%;
-}
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .email{
-    margin-left: 10px;  
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea{
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
-}
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
-}
-.contact .right form .textarea textarea{
-    padding-top: 10px;
+
+.contact .form-group input,.contact .form-group textarea{
     resize: none;
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+    color: #fff;
 }
-.contact .right form .button{
-    height: 47px;
-    width: 170px;
+
+.contact .btn{
+    
+    display: block;
+    background: #111;
+    padding: 14px 0;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
 }
+
+.contact .btn:hover{
+    
+    display: block;
+    background: forestgreen;
+    padding: 14px 0;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+}
+
+
+
+
 
 
 /* footer section styling */
@@ -563,7 +513,7 @@ footer .ftr-btn a{
         
     }
     .skills .skills-content .column,
-    .contact .contact-content .column{
+    .contact .contact-content{
         width: 100%;
         margin-bottom: 35px;
     }
@@ -601,8 +551,8 @@ footer .ftr-btn a{
     .contact .right form .fields{
         flex-direction: column;
     }
-    .contact .right form .name,
-    .contact .right form .email{
+    .contact ,
+    .contact {
         margin: 0;
     }
     .scroll-up-btn{
