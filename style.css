@@ -256,6 +256,7 @@ section .title::after{
     color: forestgreen;
 }
 .about .about-content .right p{
+    padding: 5px 0px;
     text-align: justify;
 }
 .about .about-content .right a{
@@ -285,45 +286,31 @@ section .title::after{
     background: #fff;
 }
 .projects .title::after{
-    content: "hey";
+    
 }
 
-.projects .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.projects .serv-content .card:hover{
-    background: forestgreen;
 
+.projects .project-content p{
+    padding: 5px 0px;
 }
-.projects .serv-content .card .box{
-    transition: all 0.3s ease;
-    padding: 0px 20px;
-}
-.projects .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.projects .serv-content .card i{
-    font-size: 50px;
-    color: #19ff19;
-    transition: color 0.3s ease;
-}
-.projects .serv-content .card:hover i{
-    color: #fff;
-}
-.projects .serv-content .card .text{
+
+.projects .project-content .text{
+    padding-top: 30px;
     font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    
 }
 
 
 
+
+.projects .project-content .p-icon{
+    padding: 10px;
+    color: #19ff19;
+}
+ 
 
 
 /* contact section styling */
@@ -332,6 +319,10 @@ section .title::after{
     color: #111;
     background: #111;
 
+}
+
+.contact .title::before{
+    background: #fff;
 }
 .contact h2{
     margin-top: 40px;
@@ -406,6 +397,7 @@ section .title::after{
     cursor: pointer;
     margin-top: 8px;
     width: 100%;
+    
 }
 
 
